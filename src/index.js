@@ -1,26 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import './index.css';
 import './App.css';
-import App from './App'
 import Main from './main'
-import './main.css'
-import { BrowserRouter } from 'react-router-dom';
-/*const root = ReactDOM.createRoot(document.getElementById('root'));*/
-/*root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <Main/>
-    </BrowserRouter>
-  </React.StrictMode>
-);*/
+import EstimationTools from "./estimation_tools"
+import Header from "./header";
 
-ReactDOM.render(
-  <BrowserRouter>
-  <App/>
-  </BrowserRouter>,
-  document.getElementById('root')
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Main/>
+  },
+  {
+    path: "/tools",
+    element: <EstimationTools/>
+  }
+])
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    {/* Layout ici */}
+    <RouterProvider router={router} />
+    {/* Layout ici */}
+  </React.StrictMode>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
