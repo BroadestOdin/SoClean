@@ -1,0 +1,20 @@
+.contact-form
+{
+ width: 100%;   
+}
+
+form
+{
+    width: 100%;
+}
+
+.bottom
+{
+    color:white;
+    margin-top:-2%;
+}
+
+.btn
+{
+    background-color: rgba(205, 15, 15, 0.766);
+}

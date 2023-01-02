@@ -1,0 +1,64 @@
+.w-full
+{
+    margin-top:-1%;
+    padding-left:3%;
+    padding-right: 3%;
+}
+
+.our
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.copper
+{
+    background-image: url(../screenshot/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit:cover;
+    background-color: black;
+    color:white;
+    background-size:50%;
+    width: 50vh;
+}
+
+.text-copper
+{
+color:#c29f5c;
+}
+
+.silver
+{
+    background-image: url(../screenshot/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit:cover;
+    background-color: black;
+    color:white;
+    background-size:50%;
+    width: 50vh;
+}
+
+.text-silver
+{
+    color:silver;
+}
+
+.gold
+{
+    background-image: url(../screenshot/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit:cover;
+    background-color: black;
+    color:white;
+    background-size:50%;
+    width: 50vh;
+}
+
+.text-gold
+{
+    color:goldenrod;
+}
