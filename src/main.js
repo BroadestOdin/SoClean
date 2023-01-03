@@ -24,7 +24,6 @@ export default function Main()
         <Pricing/>
         <Gallery/>
       </div>
-      <Estimation_tools/>
       <Stats/>
       <Contact/>
     </div>
