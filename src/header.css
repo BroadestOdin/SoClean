@@ -15,24 +15,25 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content:right;
-    margin-right:10px;
-    margin-top:-2%;
+    margin-right:2%;
+    margin-top:1%;
   }
   
   li {
     float: left;
-    margin:10px;
+    margin:26px;
     cursor: pointer;
+    color:white;
   }
 
   li:hover {
-    color: rgba(206, 145, 24, 0.637);
+    color: rgb(228, 156, 13);
   }
   
   li a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 12px 12px;
     text-decoration: none;
   }
   
@@ -42,12 +43,12 @@ ul {
 
   .logo
   {
-    margin-top:5px;
+
     width: auto;
-    height: 90px;
+    height: 100px;
     position: sticky;
-    top:0;
-    left:0;
+    top:20px;
+    left:35px;
   }
 
   .bg
@@ -56,5 +57,249 @@ ul {
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:url("https://images5.alphacoders.com/110/1103164.jpg");
+    background-image:url("https://cdn.discordapp.com/attachments/1062539451215130764/1066564418697166919/Turquoise_Ocean_Water_Seascape_Hello_Summer_Photo_Collage_Facebook_Cover_1492_842_px_2.jpg");
   }
+
+  .feedback {
+    background-color : #59606992;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: #00000000;
+    font-weight: bold;
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #title{
+    color:white;
+  }
+
+  #subtitle{
+    color:white;
+  }
+
+header {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #69bcf4, #30cc8b);
+  color: #fff;
+}
+
+header span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+header span::before,
+header span::after {
+  position: absolute;
+  top: -22px;
+  content: "";
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+header span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+header span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+
+.bounce
+{
+  animation:bounce;
+}
+
+
+.btnInscription
+{
+  display: inline-block;
+  width: 300px;
+  height: 44px;
+  margin: 5px 10px 15px 0;
+  padding: 10px 11px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #274991;
+  background-clip: padding-box;
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.inputInscription
+{
+  display: inline-block;
+  width: 470px;
+  height: 44px;
+  margin: 5px 10px 15px 0;
+  padding: 10px 11px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dde1ed;
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputInscriptionName
+{
+ 
+  width: 230px;
+  height: 44px;
+  margin: 5px 10px 15px 0;
+  padding: 10px 11px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #dde1ed;
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  outline: none;
+  box-sizing: border-box;
+  
+}
+#background_modal_blur
+{
+  display: flex;
+  position:fixed;
+  background-color: rgba(66, 66, 66, 0.735);
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  z-index: 40;
+  align-items: center;
+  align-content: center;
+}
+
+#background_modal
+{
+background-color: #262626f0;
+width: 30vw;
+position: relative;
+margin:auto;
+border-radius: 10px;
+}
+.newsletter_subscription
+{
+  margin-top:3%;
+  width: 100%;
+}
+
+.form_newsletter
+{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_newsletter_name
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.text_newsletter_promotional
+{
+  text-align: center;
+  margin-bottom: 1%;
+  color:white;
+  font-size:16.5px;
+  line-height: 1.5;
+  max-width: 450px;
+  width: 100%;
+}
+
+.CloseModal
+{
+  font-size: 30px;
+  color:white;
+  top:0;
+  right: 0;
+  position: absolute;
+  margin-top: 0.2%;
+  margin-right: 1.5%;
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+}
+
+.modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: grey;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9998;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.modal-backdrop.show {
+  display: block;
+}

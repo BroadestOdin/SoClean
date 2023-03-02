@@ -6,10 +6,13 @@ import {
 } from "react-router-dom";
 import './index.css';
 import './App.css';
+import './realisations.css'
+import './header.css'
 import Main from './main'
 import EstimationTools from "./estimation_tools"
 import Header from "./header";
 import NotFound from "./404"
+import Realisation from "./realisations"
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,11 @@ const router = createBrowserRouter([
   {
     path: "/estimation",
     element: <EstimationTools/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: "/realisations",
+    element: <Realisation/>,
     errorElement: <NotFound/>,
   },
   {

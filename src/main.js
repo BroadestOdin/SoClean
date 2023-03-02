@@ -4,16 +4,18 @@ import './header.css';
 import './home.css';
 import './gallery.css'
 import './contact.css'
-import './stats.css'
 import './estimation_tools.css'
+import './cie.css'
+import './before_after_slider.css'
 import Footer from './footer';
 import Contact from './contact';
 import Home from './home';
 import Header from './header';
 import Pricing from './pricing';
 import Gallery from './gallery';
-import Stats from './stats'
+import Cie from './cie'
 import Estimation_tools from './estimation_tools';
+import BeforeAfterSlider from './before_after_slider';
 export default function Main()
 {
     return (
@@ -23,8 +25,9 @@ export default function Main()
         <Home/>
         <Pricing/>
         <Gallery/>
+        <BeforeAfterSlider/>
+        <Cie/>
       </div>
-      <Stats/>
       <Contact/>
     </div>
     );

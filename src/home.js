@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 export default function home() {
     return (
-      <section class="mb-32 text-gray-800 text-center features">
-      <h2 class="text-3xl font-bold mb-20">Pourquoi choisir SoClean ?</h2>
+      <section class="mb-20 text-gray-800 text-center features">
+      <h2 class="text-3xl font-bold mb-10">Pourquoi choisir SoClean ?</h2>
   
       <div class="grid lg:gap-x-10 lg:grid-cols-3 features">
         <div class="mb-12 lg:mb-0">

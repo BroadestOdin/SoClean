@@ -1,27 +1,77 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Link } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Link } from "react-router-dom";
+import socleanlogo from './Pictures/thumbnail_SoClean_vitre_arriere_FINAL-120copie.png'
+import "animate.css";
 export default function Header() {
-    return (
-<header>
-    <div class="bg">
-    <nav class="text-center text-black text-xl py-5 px-1 navbar">
-        
-    <img class="logo" src="https://socleanesthetique.com/images/thumbnail_SoClean_vitre_arriere_FINAL-1%20copie.png"></img>
-        <ul>
-            <li>Accueil</li>
-            <li>Nos réalisations</li>
-            <li>À propos de nous</li>
-            <li>Nous contacter</li>
-        </ul>
-    </nav>
-    <div class="text-center text-black-400 py-20 px-6">
-    <h1 class="text-6xl font-bold mt-7 mb-1">SoClean Esthétique</h1>
-    <h3 class="text-2xl font-bold mb-8">La perfection dans la précision</h3>
-    <a class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light" href="#!" role="button">En savoir plus</a>
-  </div>
-    </div>
-</header>
-    );
-  }
+  const [showModal, setShowModal] = React.useState(false);
+  const onClick = () => setShowModal(!showModal);
+  return (
+    <div>
+      <header>
+        <div class="bg">
+          <nav class="text-center text-black text-xl py-5 px-1 navbar">
+            <img
+              class="logo"
+              src={socleanlogo}
+            ></img>
+            <ul>
+              <li>Accueil</li>
+              <li>Nos réalisations</li>
+              <li>À propos de nous</li>
+              <li>Nous contacter</li>
+            </ul>
+          </nav>
+          <div class="text-center text-black-400 py-20 px-6">
+            <span class="animated bounce"></span>
+          </div>
+        </div>
 
+        <div id="mybutton">
+          <button class="feedback" onClick={onClick}>
+            Devenir membre exclusif
+          </button>
+        </div>
+      </header>
+      {showModal && <div id="background_modal_blur">
+        <div id="background_modal">
+        <form class="newsletter_subscription">
+        <div class="form_newsletter">
+        <button class="CloseModal" onClick={onClick}>
+            X
+          </button>
+          <img
+              class="logo_modal"
+              src={socleanlogo}
+            ></img>
+            <br/>
+          <h3 class="text_newsletter_promotional">
+            Devenir membre exclusif vous donne accès à des rabais privilégiés et
+            nous vous tiendront informés des nouveautés.
+          </h3>
+          <br/>
+          <div className="form_newsletter_name">
+            <input
+              class="inputInscriptionName"
+              type="text"
+              placeholder="Votre prenom"
+            />
+            <input
+              class="inputInscriptionName"
+              type="text"
+              placeholder="Votre nom"
+            />
+          </div>
+          <input
+            class="inputInscription"
+            type="text"
+            placeholder="Votre adresse courriel"
+          />
+          <button class="btnInscription"> M'inscrire</button>
+        </div>
+      </form>
+        </div>
+      </div>}
+    </div>
+  );
+}

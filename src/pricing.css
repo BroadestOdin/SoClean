@@ -2,3 +2,11 @@
 {
     padding:10% !important;
 }
+
+#two {
+    --animate-duration: 0.5s !important;
+  }
+
+#three {
+    --animate-duration: 1s !important;
+  }

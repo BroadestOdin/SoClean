@@ -1,5 +1,9 @@
 .gallery-feature
 {
-    margin-top:0.5%;
     text-align: center;
+}
+
+.animated_6s
+{
+  --animate-delay: 6s;
 }
