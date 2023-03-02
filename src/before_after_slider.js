@@ -14,6 +14,7 @@ export default function BeforeAfterSlider()
     <ReactCompareImage leftImage={before} rightImage={after} />
     <ReactCompareImage leftImage={before2} rightImage={after2} />
    </div>
+   <br/>
     </div>
    )
 

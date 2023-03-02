@@ -24,8 +24,8 @@ export default function Main()
       <div id='content'>
         <Home/>
         <Pricing/>
-        <Gallery/>
         <BeforeAfterSlider/>
+        <Gallery/>
         <Cie/>
       </div>
       <Contact/>

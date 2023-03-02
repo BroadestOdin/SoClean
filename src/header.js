@@ -2,20 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Link } from "react-router-dom";
 import socleanlogo from './Pictures/thumbnail_SoClean_vitre_arriere_FINAL-120copie.png'
+import hamburger from './Pictures/hamburger.png'
 import "animate.css";
+
 export default function Header() {
   const [showModal, setShowModal] = React.useState(false);
   const onClick = () => setShowModal(!showModal);
+  
   return (
     <div>
       <header>
         <div class="bg">
           <nav class="text-center text-black text-xl py-5 px-1 navbar">
-            <img
-              class="logo"
-              src={socleanlogo}
-            ></img>
-            <ul>
+            <img class="logo"src={socleanlogo}></img>
+            <span className="menu-icon"><img id="hamburger_menu" src={hamburger}></img></span>
+            <ul class="menu">
               <li>Accueil</li>
               <li>Nos réalisations</li>
               <li>À propos de nous</li>
@@ -46,7 +47,7 @@ export default function Header() {
             ></img>
             <br/>
           <h3 class="text_newsletter_promotional">
-            Devenir membre exclusif vous donne accès à des rabais privilégiés et
+            Devenir membre exclusif vous donne accès à des <ins><big>rabais</big></ins> privilégiés et
             nous vous tiendront informés des nouveautés.
           </h3>
           <br/>

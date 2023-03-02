@@ -1,0 +1,36 @@
+.text-center
+{
+    text-align: center;
+    align-items: center;
+}
+
+.stat{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+font-size: 19px;
+text-align: center;
+border:1px solid rgb(176, 176, 176);
+border-radius: 15px;
+padding-left:2%;
+padding-top:1%;
+padding-bottom: 1%;
+padding-right: 2%;
+margin-left:10%;
+margin-right: 10%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+flex-wrap: wrap;
+}
+
+.number
+{
+    color:rgb(14, 41, 159);
+    font-weight: bold;
+}
+
+.title
+{
+    text-align: center;
+    margin-bottom:4%;
+}
