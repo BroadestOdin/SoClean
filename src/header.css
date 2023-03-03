@@ -54,7 +54,7 @@ ul {
   {
     width: 100vw;
     height: 100vh;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image:url("https://cdn.discordapp.com/attachments/1062539451215130764/1066564418697166919/Turquoise_Ocean_Water_Seascape_Hello_Summer_Photo_Collage_Facebook_Cover_1492_842_px_2.jpg");
   }
@@ -314,6 +314,10 @@ border-radius: 10px;
   {
   display: block;
   }
+  .logo
+  {
+    display: none;
+  }
 
   #hamburger_menu
   {
@@ -328,7 +332,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end
   }
 .bg{
     background-size:contain;
@@ -338,6 +342,19 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -363,7 +380,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -373,6 +390,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -398,7 +433,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -408,6 +443,23 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -433,7 +485,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -443,6 +495,23 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -469,7 +538,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -479,6 +548,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -505,7 +592,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end
   }
 .bg{
     background-size:contain;
@@ -515,6 +602,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -540,7 +645,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -550,6 +655,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -575,7 +698,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -585,6 +708,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -610,7 +751,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -620,6 +761,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -645,7 +804,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -655,6 +814,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -680,7 +857,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -690,6 +867,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -715,7 +910,7 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
@@ -725,6 +920,24 @@ border-radius: 10px;
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 60px;
+    z-index: 90;
+  }
+
+  .animated
+  {
+    display: none;
   }
 }
 
@@ -751,16 +964,33 @@ border-radius: 10px;
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 .bg{
     background-size:contain;
-    height: 39vh;
-    width: 103vw;
+    height: 33vh;
+    width: 100vw;
   }
   header
   {
     background: none;
+  }
+
+  .logo
+  {
+    display: none;
+  }
+
+  #mybutton
+  {
+    position:fixed;
+    bottom: 20px;
+    right: 35px;
+    z-index: 90;
+  }
+  .animated
+  {
+    display: none;
   }
 }
 

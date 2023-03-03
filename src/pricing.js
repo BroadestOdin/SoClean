@@ -10,7 +10,7 @@ export default function Pricing() {
                         <h1 role="heading" className="md:text-5xl text-3xl font-bold leading-10 mt-3 text-gray-800">
                             Nos services offerts
                         </h1>
-                        <p role="contentinfo" className="text-base leading-5 mt-5 text-gray-600">
+                        <p role="contentinfo" className="text-base leading-5 mt-5 text-gray-600" id="textservice">
                             SoClean Esthétique offre une grande variete de services pour l'esthetique et ce, pour toute les marques autant pour les particuliers que pour les entreprises
                         </p>
                     </div>

@@ -6,6 +6,7 @@ import './gallery.css'
 import './contact.css'
 import './estimation_tools.css'
 import './cie.css'
+import './pricing.css'
 import './before_after_slider.css'
 import Footer from './footer';
 import Contact from './contact';

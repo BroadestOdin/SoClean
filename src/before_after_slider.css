@@ -1,25 +1,245 @@
-#magic
-{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 3%;
+#magic {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
 }
 
-.container
-{
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.container > div[data-testid="container"] {
+  height: 600px !important;
+  width: 600px !important;
+  display: block;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+  .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+  }
+  .container > div[data-testid="container"] {
+    height: 800px !important;
+    width: 800px !important;
+    margin-bottom: 10%;
+  }
 }
-.container > div[data-testid="container"]
-{
-height: 600px !important;
-width: 600px !important;
-display: block;
-margin: 0 auto;
+
+@media (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 800px !important;
+        width: 800px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 910px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 800px !important;
+        width: 800px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 850px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 800px !important;
+        width: 800px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 810px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 700px !important;
+        width: 700px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 675px !important;
+        width: 675px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 720px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 675px !important;
+        width: 675px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 685px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 625px !important;
+        width: 625px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 650px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 600px !important;
+        width: 600px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 615px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 560px !important;
+        width: 560px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 580px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 500px !important;
+        width: 500px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 560px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 500px !important;
+        width: 500px !important;
+        margin-bottom: 10%;
+      }
+}
+
+@media (max-width: 540px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container > div[data-testid="container"] {
+        height: 300px !important;
+        width: 300px !important;
+        margin-bottom: 10%;
+      }
 }

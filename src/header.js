@@ -15,7 +15,7 @@ export default function Header() {
         <div class="bg">
           <nav class="text-center text-black text-xl py-5 px-1 navbar">
             <img class="logo"src={socleanlogo}></img>
-            <span className="menu-icon"><img id="hamburger_menu" src={hamburger}></img></span>
+            {/*<span className="menu-icon"><img id="hamburger_menu" src={hamburger}></img></span>*/}
             <ul class="menu">
               <li>Accueil</li>
               <li>Nos réalisations</li>
