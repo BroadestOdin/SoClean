@@ -15,22 +15,22 @@ export default function Pricing() {
                         </p>
                     </div>
                     <div className="xl:w-1/2 lg:w-7/12 relative w-full lg:mt-0 mt-12 md:px-8" role="list">
-                        <div role="listitem" className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30 animate__animated animate__slideInRight one">
-                            <div className="md:flex items-center justify-between">
+                        <div role="listitem" className="bg-white cursor-pointer shadow rounded-lg p-8 relative z-30 listsitem">
+                            <div className="md:flex items-center justify-between textlistitem">
                                 <h2 className="text-2xl font-semibold leading-6 text-gray-800">Service d'esthetique automobile</h2>
                             </div>
                         </div>
-                        <div role="listitem" id="two" className="bg-white cursor-pointer shadow rounded-lg mt-3 flex relative z-30 animate__animated animate__slideInRight">
+                        <div role="listitem" id="two" className="bg-white cursor-pointer shadow rounded-lg mt-3 flex relative z-30 listsitem">
                             <div className="w-full p-8">
-                                <div className="md:flex items-center justify-between">
+                                <div className="md:flex items-center justify-between textlistitem">
                                     <h2 className="text-2xl font-semibold leading-6 text-gray-800">Service d'esthetique pour bateau</h2>
                                 </div>
                             </div>
                         </div>
-                        <div role="listitem" id = "three" className="bg-white cursor-pointer shadow rounded-lg mt-3 flex relative z-30 animate__animated animate__slideInRight">
+                        <div role="listitem" id = "three" className="bg-white cursor-pointer shadow rounded-lg mt-3 flex relative z-30 listsitem">
                             <div className="w-full p-8">
-                                <div className="md:flex items-center justify-between">
-                                    <h2 className="text-2xl font-semibold leading-6 text-gray-800">Service d'esthetique pour VR et autres</h2>
+                                <div className="md:flex items-center justify-between textlistitem">
+                                    <h2 className="text-2xl font-semibold leading-6 text-gray-800 textlistitem">Service d'esthetique pour VR et autres</h2>
                                 </div>
                             </div>
                         </div>

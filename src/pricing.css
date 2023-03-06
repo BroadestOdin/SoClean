@@ -1,15 +1,13 @@
 .title
 {
+    margin-top:-10% !important;
     padding:10% !important;
 }
 
-#two {
-    --animate-duration: 0.5s !important;
-  }
-
-#three {
-    --animate-duration: 1s !important;
-  }
+.listsitem:hover
+{
+  background-color: rgb(37,99,235)
+}
 
   @media (max-width: 1023px) {
 
