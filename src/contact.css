@@ -18,3 +18,17 @@ form
 {
     background-color: rgba(205, 15, 15, 0.766);
 }
+
+#name-validation-message
+{
+    color:red;
+}
+#email-validation-message
+{
+    color:red;
+}
+
+#message-validation-message
+{
+    color:red;
+}
