@@ -4,11 +4,58 @@ import { Link } from "react-router-dom";
 import socleanlogo from './Pictures/thumbnail_SoClean_vitre_arriere_FINAL-120copie.png'
 import hamburger from './Pictures/hamburger.png'
 import "animate.css";
+import axios from "axios";
 
 export default function Header() {
   const [showModal, setShowModal] = React.useState(false);
-  const onClick = () => setShowModal(!showModal);
+  const [nameError, setNameError] = React.useState("");
+  const [emailError, setEmailError] = React.useState("");
+  const onClick = () => {
+    setEmailError("");
+    setNameError("");
+    setShowModal(!showModal);};
+
+  function InputNameChange(event) {
+    const name = event.target.value;
+    if (name.length < 2)
+    {setNameError("Le prénom/nom doit comprendre au moins 2 caractères");}
+    else if(/\d/.test(name)) 
+    {setNameError("Le prénom/nom ne doit comprendre que des caracteres alphabetique");}
+    else if (!/^[a-zA-Z '-]+$/.test(name)) 
+    {setNameError("Le prénom/nom ne peux pas contenir de caracteres speciaux");}
+    else
+    {setNameError("");}
+  }
+
+  function InputEmailChange(event) {
+    const email = event.target.value;
+    if (email.length < 5)
+    {setEmailError("L'adresse courriel doit comprendre au moins 5 caracteres");}
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) 
+    {setEmailError("L'adresse courriel entrée n'est pas dans un format valide");}
+    else
+    {setEmailError("");}
+  }
   
+  function BeExcluseMember()
+  {
+    const firstname = document.getElementById("firstnameexclusivemember").value;
+    const lastname = document.getElementById("lastnameexclusivemember").value;
+    const email = document.getElementById("emailexclusivemember").value;
+
+    const data = {
+      firstname: firstname,
+      email: email,
+      lastname: lastname,
+    };
+
+    axios.post("http://localhost:3001/beexclusive", data).then(function (response) {
+          document.getElementById("firstnameexclusivemember").value = "";
+          document.getElementById("lastnameexclusivemember").value = "";
+          document.getElementById("emailexclusivemember").value = "";
+          setShowModal(!showModal);
+          });
+  }
   return (
     <div>
       <header>
@@ -52,22 +99,30 @@ export default function Header() {
           <br/>
           <div className="form_newsletter_name">
             <input
+            id = "firstnameexclusivemember"
+              onChange={InputNameChange}
               class="inputInscriptionName"
               type="text"
               placeholder="Votre prenom"
             />
             <input
+              onChange={InputNameChange}
+              id = "lastnameexclusivemember"
               class="inputInscriptionName"
               type="text"
               placeholder="Votre nom"
             />
           </div>
+          {<span id="firstname-validation-message">{nameError}</span>}
           <input
+            onChange={InputEmailChange}
+            id = "emailexclusivemember"
             class="inputInscription"
             type="text"
             placeholder="Votre adresse courriel"
           />
-          <button class="btnInscription"> M'inscrire</button>
+          {<span id="email-validation-message">{emailError}</span>}
+          <button class="btnInscription" onClick={BeExcluseMember}> M'inscrire</button>
         </div>
       </form>
         </div>

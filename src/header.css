@@ -4,6 +4,21 @@
   flex-direction: row;
 }
 
+#firstname-validation-message
+{
+  color:red;
+}
+
+#lastname-validation-message
+{
+  color:red;
+}
+
+#email-validation-message
+{
+  color:red;
+}
+
 ul {
     list-style-type: none;
     margin: 0;

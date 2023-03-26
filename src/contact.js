@@ -46,13 +46,6 @@ export default function Contact() {
     {setMessageError("");}
   }
 
-  function BtnValidateBeforeSend() {
-    if (nameError = "" && emailError == "" && messageError == "")
-    {setShowButtonSendRequest(true);}
-    else
-    {setShowButtonSendRequest(false);}
-  }
-
   function SendData() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
