@@ -6,6 +6,7 @@ import hamburger from './Pictures/hamburger.png'
 import "animate.css";
 import axios from "axios";
 
+
 export default function Header() {
   const [showModal, setShowModal] = React.useState(false);
   const [nameError, setNameError] = React.useState("");
@@ -79,6 +80,9 @@ export default function Header() {
             Devenir membre exclusif
           </button>
         </div>
+
+      
+
       </header>
       {showModal && <div id="background_modal_blur">
         <div id="background_modal">
