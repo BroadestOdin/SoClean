@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import axios from "axios";
+import { useRef } from 'react';
 
 export default function Contact() {
+  const bodyRef = useRef(null);
   const [showSuccessMessage, setSuccessMessage] = React.useState(false);
   const [showButtonSendRequest, setShowButtonSendRequest] = React.useState(true);
   const [nameError, setNameError] = React.useState("");
@@ -75,7 +77,7 @@ export default function Contact() {
   }
 
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section id="contactsection" ref={bodyRef} class="bg-white dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Nous contacter

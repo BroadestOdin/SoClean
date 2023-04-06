@@ -19,6 +19,23 @@
   color:red;
 }
 
+.liens
+{
+  float: left;
+  margin:26px;
+  cursor: pointer;
+  color:white;
+  margin-top:5px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.liens:hover
+{
+  color: rgb(228, 156, 13);
+  text-decoration: none;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -52,10 +69,6 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
-    background-color: rgb(174, 255, 0);
-  }
-
   .logo
   {
     width: auto;

@@ -5,9 +5,11 @@ import socleanlogo from './Pictures/thumbnail_SoClean_vitre_arriere_FINAL-120cop
 import hamburger from './Pictures/hamburger.png'
 import "animate.css";
 import axios from "axios";
+import { useRef } from 'react';
 
 
 export default function Header() {
+  const bodyRef = useRef(null);
   const [showModal, setShowModal] = React.useState(false);
   const [nameError, setNameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
@@ -15,6 +17,13 @@ export default function Header() {
     setEmailError("");
     setNameError("");
     setShowModal(!showModal);};
+
+    const ScrollToContact = () => {
+      bodyRef.current.scrollTo({
+        top: bodyRef.current.scrollHeight,
+        behavior: 'smooth'
+      });
+    };
 
   function InputNameChange(event) {
     const name = event.target.value;
@@ -64,10 +73,9 @@ export default function Header() {
           <nav class="text-center text-black text-xl py-5 px-1 navbar">
             <img class="logo"src={socleanlogo}></img>
             <ul class="menu">
-              <li>Accueil</li>
-              <li>Nos réalisations</li>
-              <li>À propos de nous</li>
-              <li>Nous contacter</li>
+              <li><Link to="/" className="liens">Accueil</Link></li>
+              <li><Link to="/realisations" className="liens">Réalisations</Link></li>
+              <li><Link to="/contact" className="liens">Nous contacter</Link></li>
             </ul>
           </nav>
           <div class="text-center text-black-400 py-20 px-6">

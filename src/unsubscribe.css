@@ -1,0 +1,13 @@
+.unsubscribe
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.btn_unsub
+{
+    width: 250px;
+}

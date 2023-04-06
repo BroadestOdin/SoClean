@@ -7,12 +7,16 @@ import {
 import './index.css';
 import './App.css';
 import './realisations.css'
+import './unsubscribe.css'
 import './header.css'
+import './contact.css'
 import Main from './main'
 import EstimationTools from "./estimation_tools"
 import Header from "./header";
 import NotFound from "./404"
 import Realisation from "./realisations"
+import ContactRedirect from "./contactredirect"
+import Unsubscribe from "./unsubscribe"
 
 const router = createBrowserRouter([
   {
@@ -28,6 +32,16 @@ const router = createBrowserRouter([
   {
     path: "/realisations",
     element: <Realisation/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: "/contact",
+    element: <ContactRedirect/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: "/unsubscribe",
+    element: <Unsubscribe/>,
     errorElement: <NotFound/>,
   },
   {
