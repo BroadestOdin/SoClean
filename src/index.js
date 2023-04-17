@@ -10,6 +10,7 @@ import './realisations.css'
 import './unsubscribe.css'
 import './header.css'
 import './contact.css'
+import './Jobstatus.css'
 import Main from './main'
 import EstimationTools from "./estimation_tools"
 import Header from "./header";
@@ -17,6 +18,8 @@ import NotFound from "./404"
 import Realisation from "./realisations"
 import ContactRedirect from "./contactredirect"
 import Unsubscribe from "./unsubscribe"
+import JobStatus from './Jobstatus';
+
 
 const router = createBrowserRouter([
   {
@@ -37,6 +40,11 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <ContactRedirect/>,
+    errorElement: <NotFound/>,
+  },
+  {
+    path: "/status",
+    element: <JobStatus/>,
     errorElement: <NotFound/>,
   },
   {
