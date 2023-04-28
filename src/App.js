@@ -11,7 +11,6 @@ class App extends Component {
     return (
 <div>
   <Route exact path='/' component={Main}/>
-  <Route exact path='/tools' component={Estimation_tools}/>
 </div>
    );
   }

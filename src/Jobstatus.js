@@ -6,10 +6,17 @@ import RetrieveJobStatus from "./RetrieveJobStatus"
 function getSCEValue() {
   const input = document.getElementById('SCEJobID');
   const value = input.value;
-  console.log(value)
+  sessionStorage.setItem("SCEvalue", "");
+  sessionStorage.setItem("SCEvalue", value);
 }
 export default function JobStatus()
 {
+
+  const [showDetail, setShowDetail] = React.useState(false);
+  const onClick = () => {
+    setShowDetail(true);
+  };
+
     return(
         <div>
         <Header />
@@ -57,13 +64,13 @@ export default function JobStatus()
                   </div>
                   <div class="flex flex-wrap -mx-3 mb-2">
                     <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                    <button type="button" id="searchSCE" onClick={getSCEValue} class="btn_unsub block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Rechercher</button>
+                    <button type="button" id="searchSCE" onClick={() => {getSCEValue(); onClick();}} class="btn_unsub block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Rechercher</button>
                     </div>
                   </div>
                 </form>
               </div>
               <div>
-              <RetrieveJobStatus></RetrieveJobStatus>
+              {showDetail && <RetrieveJobStatus></RetrieveJobStatus>}
           </div>
             </div>
           </>

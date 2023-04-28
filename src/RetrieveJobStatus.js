@@ -4,15 +4,17 @@ function RetrieveJobStatus() {
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      axios.get("http://localhost:3001/jobsstatus").then((response) => {
+      axios.get("http://localhost:3001/jobsstatus", {params: {
+        sce: sessionStorage.getItem("SCEvalue"),
+      }}).then((response) => {
         setData(response.data);
       });
     }, []);
   
     return (
         <div>
-        {data.map((item) => (
-            <div class="mt-6 border-t border-gray-100">
+        {data.map((item, index) => (
+            <div class="mt-6 border-t border-gray-100" key={index}>
         <div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
         <dt class="text-sm font-medium leading-6 text-gray-900">Numéro de la demande</dt>
         <dd class="mt-1 text-sm leading-6 text-gray-700 sm:col-span-2 sm:mt-0">{item.SCE}</dd>

@@ -18,13 +18,6 @@ export default function Header() {
     setNameError("");
     setShowModal(!showModal);};
 
-    const ScrollToContact = () => {
-      bodyRef.current.scrollTo({
-        top: bodyRef.current.scrollHeight,
-        behavior: 'smooth'
-      });
-    };
-
   function InputNameChange(event) {
     const name = event.target.value;
     if (name.length < 2)
