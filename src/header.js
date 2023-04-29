@@ -11,6 +11,7 @@ import { useRef } from 'react';
 export default function Header() {
   const bodyRef = useRef(null);
   const [showModal, setShowModal] = React.useState(false);
+  const [showMenuMobile, setShowMenuMobile] = React.useState(false);
   const [nameError, setNameError] = React.useState("");
   const [emailError, setEmailError] = React.useState("");
   const onClick = () => {
@@ -18,6 +19,10 @@ export default function Header() {
     setNameError("");
     setShowModal(!showModal);};
 
+    function menuOpenMobile()
+    {
+      setShowMenuMobile(!showMenuMobile);
+    }
   function InputNameChange(event) {
     const name = event.target.value;
     if (name.length < 2)
@@ -62,19 +67,19 @@ export default function Header() {
   return (
     <div>
       <header>
-        <div class="bg">
-          <nav class="text-center text-black text-xl py-5 px-1 navbar">
+      <nav class="text-center text-black text-xl py-5 px-1 navbar">
             <img class="logo"src={socleanlogo}></img>
-            <ul class="menu">
+            <ul className={`menu ${showMenuMobile? 'open' : ''}`}>
               <li><Link to="/" className="liens">Accueil</Link></li>
               <li><Link to="/realisations" className="liens">Réalisations</Link></li>
               <li><Link to="/contact" className="liens">Nous contacter</Link></li>
             </ul>
+            <button id="hamburgermenu" className={showMenuMobile? 'open' : ''} onClick={menuOpenMobile}><img src={hamburger}></img></button>
           </nav>
-          <div class="text-center text-black-400 py-20 px-6">
+        <img src="https://cdn.discordapp.com/attachments/1062539451215130764/1066564418697166919/Turquoise_Ocean_Water_Seascape_Hello_Summer_Photo_Collage_Facebook_Cover_1492_842_px_2.jpg" class="bg"></img>
+          <div class="text-center text-black-400 py-20 px-6 arrow">
             <span class="animated bounce"></span>
           </div>
-        </div>
 
         <div id="mybutton">
           <button class="feedback" onClick={onClick}>

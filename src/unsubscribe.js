@@ -13,6 +13,7 @@ function getEmailFromInput() {
   })
   .then(response => {
     console.log(response.data);
+    document.getElementById('emailvalue').value = "";
   })
   .catch(error => {
     console.error(error);
