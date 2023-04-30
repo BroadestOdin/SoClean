@@ -6,7 +6,7 @@ function RetrieveInsta() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/data").then((response) => {
+    axios.get("https://dev.socleanesthetique.com:3001/data").then((response) => {
       setData(response.data);
     });
   }, []);

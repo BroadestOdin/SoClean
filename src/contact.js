@@ -62,7 +62,7 @@ export default function Contact() {
           message: message,
         };
         axios
-          .post("http://localhost:3001/newrequest", data)
+          .post("https://dev.socleanesthetique.com:3001/newrequest", data)
           .then(function (response) {
             const name = (document.getElementById("name").value = "");
             const email = (document.getElementById("email").value = "");

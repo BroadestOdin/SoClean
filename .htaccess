@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect all HTTP traffic to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rewrite all URLs to the index.html file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]

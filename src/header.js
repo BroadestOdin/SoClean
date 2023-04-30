@@ -57,7 +57,7 @@ export default function Header() {
       lastname: lastname,
     };
 
-    axios.post("http://localhost:3001/beexclusive", data).then(function (response) {
+    axios.post("https://dev.socleanesthetique.com:3001/beexclusive", data).then(function (response) {
           document.getElementById("firstnameexclusivemember").value = "";
           document.getElementById("lastnameexclusivemember").value = "";
           document.getElementById("emailexclusivemember").value = "";
